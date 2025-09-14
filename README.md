@@ -38,64 +38,10 @@ Customer churn prediction is crucial for business sustainability. This project b
 - **Machine Learning:** Random Forest, Logistic Regression
 - **Environment:** Jupyter Notebook
 
-## 📁 Project Structure
 
-```
-customer-churn-prediction/
-│
-├── notebooks/
-│   ├── 01_data_extraction.ipynb          # SQL queries and data loading
-│   ├── 02_exploratory_analysis.ipynb     # EDA and visualizations
-│   ├── 03_feature_engineering.ipynb      # Feature creation and preprocessing
-│   ├── 04_model_building.ipynb           # ML model training and evaluation
-│   └── 05_business_insights.ipynb        # Results and recommendations
-│
-├── data/
-│   ├── customer_data.db                  # SQLite database
-│   ├── processed_data.csv                # Cleaned dataset
-│   └── sample_data/                      # Sample datasets
-│
-├── src/
-│   ├── data_processing.py                # Data preprocessing functions
-│   ├── model_training.py                 # ML model classes
-│   ├── sql_queries.py                    # SQL query templates
-│   └── visualization.py                  # Plotting functions
-│
-├── results/
-│   ├── model_performance.png             # Model comparison charts
-│   ├── feature_importance.png            # Feature analysis plots
-│   └── business_insights.png             # Key findings visualizations
-│
-├── requirements.txt                      # Python dependencies
-├── README.md                            # Project documentation
-└── LICENSE                              # MIT License
-```
 
-## 🚀 Quick Start
 
-### 1. Clone the Repository
-```bash
-git clone https://github.com/yourusername/customer-churn-prediction.git
-cd customer-churn-prediction
-```
 
-### 2. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 3. Run the Jupyter Notebooks
-```bash
-jupyter notebook
-```
-
-Start with `01_data_extraction.ipynb` and follow the numbered sequence.
-
-### 4. Alternative: Run Python Scripts
-```bash
-python src/data_processing.py
-python src/model_training.py
-```
 
 ## 📊 Key SQL Queries
 
@@ -152,16 +98,7 @@ FROM customers;
 3. **Early Intervention:** Enhanced onboarding program for new customers
 4. **Risk Monitoring:** Weekly outreach to customers with >70% churn probability
 
-## 📈 Results & Visualizations
 
-### Churn Distribution by Key Factors
-![Churn Analysis](results/churn_analysis.png)
-
-### Model Performance Metrics  
-![Model Performance](results/model_performance.png)
-
-### Feature Importance Rankings
-![Feature Importance](results/feature_importance.png)
 
 ## 💡 Business Use Cases
 
@@ -200,69 +137,8 @@ def predict_churn_risk(customer_data):
     return probability, risk_level
 ```
 
-## 📚 Learning Resources
 
-### SQL for Data Science
-- [SQL Tutorial - W3Schools](https://www.w3schools.com/sql/)
-- [Advanced SQL for Data Analysis](https://mode.com/sql-tutorial/)
 
-### Machine Learning  
-- [Scikit-learn Documentation](https://scikit-learn.org/stable/)
-- [Customer Analytics with Python](https://www.datacamp.com/courses/customer-analytics-retention-in-python)
-
-### Business Applications
-- [Customer Churn Analysis Guide](https://blog.hubspot.com/service/what-does-it-mean-to-churn)
-- [Retention Strategy Best Practices](https://www.salesforce.com/resources/articles/customer-retention/)
-
-## 🤝 Contributing
-
-Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) for details on:
-- Code style and standards
-- How to submit pull requests  
-- Reporting bugs and requesting features
-
-### Development Setup
-```bash
-# Clone and setup development environment
-git clone https://github.com/yourusername/customer-churn-prediction.git
-cd customer-churn-prediction
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements-dev.txt
-```
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙋‍♂️ Contact & Support
-
-**Author:** Your Name  
-**Email:** your.email@example.com  
-**LinkedIn:** [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)  
-**Portfolio:** [Your Portfolio Website](https://yourwebsite.com)
-
-### Get Help
-- 🐛 **Report bugs:** [GitHub Issues](https://github.com/yourusername/customer-churn-prediction/issues)
-- 💬 **Ask questions:** [GitHub Discussions](https://github.com/yourusername/customer-churn-prediction/discussions)
-- 📧 **Email support:** your.email@example.com
-
-## 🎯 Future Enhancements
-
-### Planned Features
-- [ ] **Real-time Dashboard:** Streamlit app for business users
-- [ ] **A/B Testing Framework:** Test retention strategies
-- [ ] **Deep Learning Models:** Neural networks for improved accuracy
-- [ ] **Time Series Analysis:** Seasonal churn pattern detection
-- [ ] **API Development:** REST API for production deployment
-
-### Model Improvements
-- [ ] **Hyperparameter Tuning:** Grid search optimization
-- [ ] **Feature Engineering:** Advanced customer behavior metrics  
-- [ ] **Ensemble Methods:** Combine multiple models for better performance
-- [ ] **Explainable AI:** LIME/SHAP integration for model transparency
-
----
 
 ## ⭐ Star this Repository
 
